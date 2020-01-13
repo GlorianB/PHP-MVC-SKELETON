@@ -1,0 +1,8 @@
+# This .htaccess deny every request on all files except the setup.php file
+
+# default deny -> we allow first then deny every access that doesn't match allow rules list
+Order Allow,Deny
+
+<FilesMatch "^setup\.php$">
+Allow from all
+</FilesMatch>

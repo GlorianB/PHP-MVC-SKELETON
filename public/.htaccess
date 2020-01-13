@@ -1,0 +1,18 @@
+# disable MultiViews search
+Options -MultiViews
+
+# enable mod_rewrite module
+RewriteEngine On
+
+# define rewrite root
+RewriteBase /camagru/public/
+
+# If specified directory name doesn't exist
+RewriteCond %{REQUEST_FILENAME} !-d
+# and specified file name doesn't exist
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# We execute the following
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+
+# query string after enabled, and L will stop any rules to be applied after this one
