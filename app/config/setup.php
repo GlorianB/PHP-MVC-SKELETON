@@ -12,7 +12,7 @@ if (isset($_GET['load']))
         $msg = 'PDO error in ' . $e->getFile() . ' line' . $e->getLine() . ' : ' . $e->getMessage();
         exit($msg); 
     }
-    echo "caca";
+	// Write your setup script below
 }
 else
     echo '<a href="?load">Delete and recreate database</a>';

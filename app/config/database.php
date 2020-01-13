@@ -1,7 +1,7 @@
 <?php
 
-$DB_DSN = "mysql:host:localhost;dbname=Camagru;";
-$DB_USER = "root";
-$DB_PASSWORD = "";
+$DB_DSN = "mysql:host:XXX;dbname=XXX;";
+$DB_USER = "XXX";
+$DB_PASSWORD = "XXX";
 
 ?>
